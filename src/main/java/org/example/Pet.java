@@ -1,6 +1,6 @@
 package org.example;
 
-public  abstract class Pet {
+public  abstract class Pet extends Animal {
     private String name;
     private int age;
     private int happiness;
@@ -35,7 +35,7 @@ public  abstract class Pet {
         }
     }
 
-    public void eat(){
+    public void feed(){
         if (hunger == 10){
             System.out.println(name + " is full!");
         }else if(hunger < 10){
@@ -44,11 +44,6 @@ public  abstract class Pet {
             System.out.println(name  + "'s hunger is at " + hunger + "/10 now");
         }
     }
-
-
-
-
-
 
 
      public int getHunger() {
